@@ -7,6 +7,7 @@ import { Home } from './pages/Home';
 import { Spreads } from './pages/Spreads';
 import { Reading } from './pages/Reading';
 import { DailyCard } from './pages/DailyCard';
+import { SavedReadings } from './pages/SavedReadings';
 import '@/index.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/spreads" element={<Spreads />} />
                 <Route path="/reading" element={<Reading />} />
                 <Route path="/daily-card" element={<DailyCard />} />
+                <Route path="/saved-readings" element={<SavedReadings />} />
               </Routes>
             </div>
             <Settings />
