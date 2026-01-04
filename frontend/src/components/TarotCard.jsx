@@ -1,12 +1,31 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { CardBack } from '@/components/ui/card-back';
+import { CardBackMinimalist } from '@/components/ui/card-back-minimalist';
+import { CardBackOrnate } from '@/components/ui/card-back-ornate';
 import { Sparkles } from 'lucide-react';
+import { useTheme } from '@/contexts/ThemeContext';
 
 export const TarotCard = ({ card, isRevealed = false, isReversed = false, onClick, showMeaning = false }) => {
+  const { cardBackStyle } = useTheme();
+  
   if (!card) return null;
   
   const meaning = isReversed ? card.reversedMeaning : card.uprightMeaning;
+  
+  const renderCardBack = () => {
+    const commonProps = { className: 'w-full h-full' };
+    
+    switch (cardBackStyle) {
+      case 'minimalist':
+        return <CardBackMinimalist {...commonProps} />;
+      case 'ornate':
+        return <CardBackOrnate {...commonProps} />;
+      case 'mystical':
+      default:
+        return <CardBack {...commonProps} />;
+    }
+  };
   
   return (
     <div 
@@ -15,7 +34,7 @@ export const TarotCard = ({ card, isRevealed = false, isReversed = false, onClic
     >
       <Card className="relative w-40 h-64 sm:w-48 sm:h-72 transition-all duration-500 hover:scale-105 hover:shadow-mystical">
         {!isRevealed ? (
-          <CardBack className="w-full h-full" />
+          renderCardBack()
         ) : (
           <div className={`relative w-full h-full bg-gradient-card border-2 ${
             isReversed ? 'border-destructive/50 rotate-180' : 'border-primary/50'
