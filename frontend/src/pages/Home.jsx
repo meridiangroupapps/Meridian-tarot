@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Moon, Star, Sparkles } from 'lucide-react';
+import { Moon, Star, Sparkles, BookMarked } from 'lucide-react';
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -64,6 +64,16 @@ export const Home = () => {
               className="border-primary/50 text-foreground hover:bg-primary/10 px-8 py-6 text-lg transition-all duration-300 hover:scale-105"
             >
               Daily Card Draw
+            </Button>
+            
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={() => navigate('/saved-readings')}
+              className="border-accent/50 text-foreground hover:bg-accent/10 px-8 py-6 text-lg transition-all duration-300 hover:scale-105"
+            >
+              <BookMarked className="w-5 h-5 mr-2" />
+              Saved Readings
             </Button>
           </div>
           
