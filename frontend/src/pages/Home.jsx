@@ -39,7 +39,7 @@ export const Home = () => {
           {/* Hero text */}
           <div className="space-y-4">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-foreground leading-tight" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-              Mystic Tarot
+              Meridian Tarot
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Unlock the wisdom of the cards and illuminate your path through ancient divination
