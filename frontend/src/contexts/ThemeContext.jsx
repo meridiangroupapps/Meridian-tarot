@@ -3,22 +3,72 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 const ThemeContext = createContext();
 
 export const themes = [
-  { id: 'meridian', name: 'Meridian' },
-  { id: 'high-contrast-light', name: 'High Contrast Light' },
-  { id: 'high-contrast-dark', name: 'High Contrast Dark' },
-  { id: 'grayscale-light', name: 'Grayscale Light' },
-  { id: 'grayscale-dark', name: 'Grayscale Dark' },
-  { id: 'spring', name: 'Spring' },
-  { id: 'summer', name: 'Summer' },
-  { id: 'fall', name: 'Fall' },
-  { id: 'autumn', name: 'Autumn' },
-  { id: 'winter', name: 'Winter' }
+  { 
+    id: 'high-contrast-dark', 
+    name: 'High Contrast Dark',
+    description: 'Pure black & white for OLED',
+    icon: '🌙'
+  },
+  { 
+    id: 'high-contrast-light', 
+    name: 'High Contrast Light',
+    description: 'Bright and crisp',
+    icon: '☀️'
+  },
+  { 
+    id: 'grayscale-dark', 
+    name: 'Grayscale Dark',
+    description: 'Soft dark neutrals',
+    icon: '🌑'
+  },
+  { 
+    id: 'grayscale-light', 
+    name: 'Grayscale Light',
+    description: 'Gentle gray tones',
+    icon: '☁️'
+  },
+  { 
+    id: 'meridian', 
+    name: 'Meridian',
+    description: 'Teal & pastel pink',
+    icon: '🌊'
+  },
+  { 
+    id: 'spring', 
+    name: 'Spring',
+    description: 'Fresh pastels',
+    icon: '🌸'
+  },
+  { 
+    id: 'summer', 
+    name: 'Summer',
+    description: 'Warm and vibrant',
+    icon: '☀️'
+  },
+  { 
+    id: 'fall', 
+    name: 'Fall',
+    description: 'Cool earthy tones',
+    icon: '🍂'
+  },
+  { 
+    id: 'autumn', 
+    name: 'Autumn',
+    description: 'Warm and cozy',
+    icon: '🍁'
+  },
+  { 
+    id: 'winter', 
+    name: 'Winter',
+    description: 'Cool and crisp',
+    icon: '❄️'
+  }
 ];
 
 export const cardBackStyles = [
-  { id: 'mystical', name: 'Mystical' },
-  { id: 'minimalist', name: 'Minimalist' },
-  { id: 'ornate', name: 'Ornate' }
+  { id: 'mystical', name: 'Mystical', description: 'Celestial & sacred' },
+  { id: 'minimalist', name: 'Minimalist', description: 'Clean & simple' },
+  { id: 'ornate', name: 'Ornate', description: 'Decorative & elaborate' }
 ];
 
 export const ThemeProvider = ({ children }) => {
