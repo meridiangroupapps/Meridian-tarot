@@ -246,27 +246,27 @@ code {
     
     /* Winter */
     [data-theme="winter"] {
-        --background: 200 40% 85%;
-        --foreground: 210 60% 12%;
-        --card: 200 35% 90%;
-        --card-foreground: 210 60% 12%;
-        --popover: 200 37% 87%;
-        --popover-foreground: 210 60% 12%;
-        --primary: 205 55% 42%;
+        --background: 207 100% 97%;
+        --foreground: 212 32% 21%;
+        --card: 207 100% 98%;
+        --card-foreground: 212 32% 21%;
+        --popover: 207 100% 96%;
+        --popover-foreground: 212 32% 21%;
+        --primary: 212 100% 50%;
         --primary-foreground: 0 0% 100%;
-        --secondary: 200 30% 78%;
-        --secondary-foreground: 210 60% 12%;
-        --muted: 200 25% 72%;
-        --muted-foreground: 210 35% 30%;
-        --accent: 190 60% 50%;
+        --secondary: 207 80% 94%;
+        --secondary-foreground: 212 32% 21%;
+        --muted: 207 50% 92%;
+        --muted-foreground: 210 24% 57%;
+        --accent: 212 100% 50%;
         --accent-foreground: 0 0% 100%;
         --destructive: 0 55% 48%;
         --destructive-foreground: 0 0% 98%;
-        --border: 200 28% 65%;
-        --input: 200 28% 65%;
-        --ring: 205 55% 42%;
-        --gradient-card: linear-gradient(145deg, hsl(200 33% 88%), hsl(200 37% 82%));
-        --shadow-mystical: 0 8px 32px -4px hsl(205 55% 42% / 0.2);
+        --border: 207 40% 85%;
+        --input: 207 40% 85%;
+        --ring: 212 100% 50%;
+        --gradient-card: linear-gradient(145deg, hsl(207 100% 98%), hsl(207 80% 96%));
+        --shadow-mystical: 0 8px 32px -4px hsl(212 100% 50% / 0.15);
     }
 }
 
