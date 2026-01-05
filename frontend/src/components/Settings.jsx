@@ -23,65 +23,55 @@ export const Settings = () => {
         </button>
 
         {isOpen && (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 animate-card-reveal">
+          <div className="space-y-8 animate-card-reveal">
             {/* Theme Selector */}
-            <Card className="bg-gradient-card border-border/50">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-foreground">
-                  <Palette className="w-5 h-5 text-accent" />
-                  App Theme
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                  {themes.map((t) => (
-                    <Button
-                      key={t.id}
-                      onClick={() => changeTheme(t.id)}
-                      variant={theme === t.id ? 'default' : 'outline'}
-                      className={`w-full transition-all duration-300 ${
-                        theme === t.id
-                          ? 'bg-primary text-primary-foreground shadow-glow'
-                          : 'border-border/50 hover:border-primary/50 hover:bg-primary/10'
-                      }`}
-                    >
-                      {t.name}
-                    </Button>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <Palette className="w-5 h-5 text-accent" />
+                <h3 className="text-lg font-semibold text-foreground">Appearance</h3>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+                {themes.map((t) => (
+                  <button
+                    key={t.id}
+                    onClick={() => changeTheme(t.id)}
+                    className={`p-4 rounded-lg border-2 transition-all duration-300 text-left ${
+                      theme === t.id
+                        ? 'border-primary bg-primary/10 shadow-glow'
+                        : 'border-border/50 bg-card/50 hover:border-primary/50 hover:bg-card'
+                    }`}
+                  >
+                    <div className="text-2xl mb-2">{t.icon}</div>
+                    <div className="font-medium text-foreground text-sm mb-1">{t.name}</div>
+                    <div className="text-xs text-muted-foreground">{t.description}</div>
+                  </button>
+                ))}
+              </div>
+            </div>
 
             {/* Card Back Style Selector */}
-            <Card className="bg-gradient-card border-border/50">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-foreground">
-                  <Image className="w-5 h-5 text-accent" />
-                  Card Back Style
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-3 gap-3">
-                  {cardBackStyles.map((style) => (
-                    <Button
-                      key={style.id}
-                      onClick={() => changeCardBackStyle(style.id)}
-                      variant={cardBackStyle === style.id ? 'default' : 'outline'}
-                      className={`w-full transition-all duration-300 ${
-                        cardBackStyle === style.id
-                          ? 'bg-primary text-primary-foreground shadow-glow'
-                          : 'border-border/50 hover:border-primary/50 hover:bg-primary/10'
-                      }`}
-                    >
-                      {style.name}
-                    </Button>
-                  ))}
-                </div>
-                <p className="text-sm text-muted-foreground mt-4">
-                  Current style: <span className="text-accent font-medium">{cardBackStyles.find(s => s.id === cardBackStyle)?.name}</span>
-                </p>
-              </CardContent>
-            </Card>
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <Image className="w-5 h-5 text-accent" />
+                <h3 className="text-lg font-semibold text-foreground">Card Back Style</h3>
+              </div>
+              <div className="grid grid-cols-3 gap-3">
+                {cardBackStyles.map((style) => (
+                  <button
+                    key={style.id}
+                    onClick={() => changeCardBackStyle(style.id)}
+                    className={`p-4 rounded-lg border-2 transition-all duration-300 text-left ${
+                      cardBackStyle === style.id
+                        ? 'border-primary bg-primary/10 shadow-glow'
+                        : 'border-border/50 bg-card/50 hover:border-primary/50 hover:bg-card'
+                    }`}
+                  >
+                    <div className="font-medium text-foreground text-sm mb-1">{style.name}</div>
+                    <div className="text-xs text-muted-foreground">{style.description}</div>
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
         )}
       </div>
