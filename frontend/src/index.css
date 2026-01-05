@@ -196,27 +196,27 @@ code {
     
     /* Fall (Cool) */
     [data-theme="fall"] {
-        --background: 210 25% 88%;
-        --foreground: 210 45% 15%;
-        --card: 210 22% 92%;
-        --card-foreground: 210 45% 15%;
-        --popover: 210 23% 89%;
-        --popover-foreground: 210 45% 15%;
-        --primary: 215 40% 45%;
+        --background: 27 100% 97%;
+        --foreground: 24 60% 20%;
+        --card: 22 100% 96%;
+        --card-foreground: 24 60% 20%;
+        --popover: 24 100% 93%;
+        --popover-foreground: 24 60% 20%;
+        --primary: 17 74% 61%;
         --primary-foreground: 0 0% 100%;
-        --secondary: 210 18% 80%;
-        --secondary-foreground: 210 45% 15%;
-        --muted: 210 15% 75%;
-        --muted-foreground: 210 25% 35%;
-        --accent: 200 50% 50%;
+        --secondary: 24 100% 91%;
+        --secondary-foreground: 24 60% 20%;
+        --muted: 24 100% 91%;
+        --muted-foreground: 22 56% 40%;
+        --accent: 17 74% 61%;
         --accent-foreground: 0 0% 100%;
         --destructive: 0 60% 48%;
         --destructive-foreground: 0 0% 98%;
-        --border: 210 20% 68%;
-        --input: 210 20% 68%;
-        --ring: 215 40% 45%;
-        --gradient-card: linear-gradient(145deg, hsl(210 20% 90%), hsl(210 24% 84%));
-        --shadow-mystical: 0 8px 32px -4px hsl(215 40% 45% / 0.18);
+        --border: 22 50% 88%;
+        --input: 22 50% 88%;
+        --ring: 17 74% 61%;
+        --gradient-card: linear-gradient(145deg, hsl(24 100% 93%), hsl(22 100% 91%));
+        --shadow-mystical: 0 8px 32px -4px hsl(17 74% 61% / 0.18);
     }
     
     /* Autumn (Warm) */
