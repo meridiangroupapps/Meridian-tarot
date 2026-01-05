@@ -221,27 +221,27 @@ code {
     
     /* Autumn (Warm) */
     [data-theme="autumn"] {
-        --background: 30 35% 88%;
-        --foreground: 25 50% 18%;
-        --card: 30 32% 92%;
-        --card-foreground: 25 50% 18%;
-        --popover: 30 33% 89%;
-        --popover-foreground: 25 50% 18%;
-        --primary: 25 60% 45%;
+        --background: 25 44% 11%;
+        --foreground: 28 66% 93%;
+        --card: 25 39% 18%;
+        --card-foreground: 28 66% 93%;
+        --popover: 25 42% 15%;
+        --popover-foreground: 28 66% 93%;
+        --primary: 33 87% 49%;
         --primary-foreground: 0 0% 100%;
-        --secondary: 30 28% 80%;
-        --secondary-foreground: 25 50% 18%;
-        --muted: 30 25% 75%;
-        --muted-foreground: 25 35% 32%;
-        --accent: 15 70% 52%;
+        --secondary: 24 37% 27%;
+        --secondary-foreground: 28 66% 93%;
+        --muted: 25 35% 22%;
+        --muted-foreground: 28 40% 70%;
+        --accent: 33 87% 49%;
         --accent-foreground: 0 0% 100%;
         --destructive: 0 65% 48%;
         --destructive-foreground: 0 0% 98%;
-        --border: 30 25% 68%;
-        --input: 30 25% 68%;
-        --ring: 25 60% 45%;
-        --gradient-card: linear-gradient(145deg, hsl(30 30% 90%), hsl(30 34% 84%));
-        --shadow-mystical: 0 8px 32px -4px hsl(25 60% 45% / 0.2);
+        --border: 25 30% 30%;
+        --input: 25 30% 30%;
+        --ring: 33 87% 49%;
+        --gradient-card: linear-gradient(145deg, hsl(25 39% 20%), hsl(25 42% 15%));
+        --shadow-mystical: 0 8px 32px -4px hsl(33 87% 49% / 0.2);
     }
     
     /* Winter */
